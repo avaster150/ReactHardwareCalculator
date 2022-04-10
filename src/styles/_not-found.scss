@@ -1,0 +1,32 @@
+.not-found {
+  min-width: 280px;
+  margin: 0 auto;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h1 {
+    color: $error;
+  }
+  .fa-exclamation-triangle {
+    color: $error;
+  }
+  .go-back {
+    margin-top: 10px;
+    display: block;
+    color: $light;
+    text-decoration: none;
+    background-color: $error;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.2s;
+    border: 0;
+    box-shadow: 1px 1px 5px black;
+    font-weight: 500;
+    &:hover {
+      background-color: $error-hover;
+    }
+  }
+}

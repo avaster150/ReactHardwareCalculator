@@ -1,0 +1,169 @@
+.products-container {
+  margin: 40px auto;
+  min-width: 1200px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .procucts-container-title {
+    margin-bottom: 20px;
+  }
+  .product-filter {
+    width: 1220px;
+    text-align: end;
+    margin-bottom: 5px;
+  }
+  .products-empty {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .products-box-area {
+    padding: 10px 10px;
+    border: 1px solid $muted;
+    border-radius: 4px;
+    box-shadow: 1px 1px 5px $muted;
+  }
+
+  .products-box {
+    background-color: $light;
+    width: 1200px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid $dark;
+    box-shadow: 0px 1px 6px black;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    .products-info-first {
+      width: 200px;
+    }
+    .products-info-second {
+      width: 200px;
+    }
+    .products-info-costs {
+      width: 100px;
+    }
+    .products-options {
+      display: flex;
+      justify-content: end;
+      width: 150px;
+    }
+
+    .icon-link {
+      color: $dark;
+    }
+    .fa-solid {
+      font-size: 20px;
+      margin-left: 10px;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+    .fa-circle-info {
+      &:hover {
+        color: $primary;
+      }
+    }
+    .fa-pen-to-square {
+      &:hover {
+        color: $success;
+      }
+    }
+    .fa-trash-can {
+      &:hover {
+        color: $error;
+      }
+    }
+  }
+  .product-total-cost-box {
+    width: 100%;
+    margin-top: 10px;
+    text-align: end;
+  }
+}
+
+.prodcuts-btn-start {
+  margin-top: 10px;
+  background-color: $primary;
+  color: $light;
+  text-transform: uppercase;
+  vertical-align: bottom;
+  border: 0;
+  box-shadow: 1px 1px 5px black;
+  font-weight: 500;
+  padding: 10px 25px;
+  transition: 0.2s;
+  cursor: pointer;
+  &:hover {
+    background-color: $primary-hover;
+  }
+}
+
+@media (max-width: 1250px) {
+  .products-container {
+    min-width: 700px;
+    .product-filter {
+      width: 680px;
+    }
+    .products-box {
+      width: 680px;
+      font-size: 14px;
+      .fa-solid {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+@media (max-width: 720px) {
+  .products-container {
+    min-width: 420px;
+    .product-filter {
+      width: 380px;
+    }
+    .products-box {
+      width: 380px;
+      font-size: 12px;
+      .products-info-second {
+        display: none;
+      }
+      .fa-solid {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  .products-container {
+    min-width: 300px;
+    .product-filter {
+      width: 280px;
+    }
+    .products-box {
+      width: 280px;
+      font-size: 12px;
+      .products-info-costs {
+        display: none;
+      }
+      .products-info-second {
+        display: none;
+      }
+      .fa-solid {
+        font-size: 12px;
+      }
+    }
+  }
+  .prodcuts-btn-start {
+    font-size: 12 px;
+    padding: 10px 20px;
+
+    &:hover {
+      background-color: $primary-hover;
+    }
+  }
+}
